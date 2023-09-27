@@ -1,0 +1,710 @@
+# Welcome to the Category Hierarchy YAML Configuration File!
+# This file defines a hierarchical structure for organizing categories in a book library or similar system.
+# Please follow the guidelines below when editing this file:
+
+# Author Information:
+#   Author: Indrajit Ghosh
+#   Email: rs_math1902@isibang.ac.in
+#   GitHub: github.com/indrajit912
+
+# 1. Category Structure:
+#    - Each category must have a unique 'code', 'name' and a 'description' that briefly 
+#      explains the category's purpose.
+#    - Categories can have 'children' subcategories to create a hierarchical structure.
+
+# 2. Category Naming:
+#    - Use descriptive and meaningful names for categories to ensure clarity.
+#    - Avoid using special characters or spaces in category names.
+#    - Choose a short 'code' for any category. Preferably 4-5 char long!
+
+# 3. Descriptions:
+#    - The 'description' field should provide a concise overview of the category's content or subject matter.
+
+# 4. Indentation:
+#    - Use proper indentation (2 spaces) to maintain the hierarchy. Be consistent throughout the file.
+
+# 5. Editing Guidelines:
+#    - Feel free to add, modify, or remove categories and subcategories as needed.
+#    - Ensure that child categories are properly nested under their parent categories.
+
+# 6. Comments:
+#    - You can add comments within this file using the '#' symbol to provide additional information or explanations.
+
+# Example:
+#   - code: exmpl_cat
+#     name: Example Category
+#     description: This is an example category.
+#     children:
+#       - code: subcat1
+#         name: Subcategory 1
+#         description: This is a subcategory under 'example_cat.'
+#       - code: subcat2
+#         name: Subcategory 2
+#         description: Another subcategory under 'example_cat.'
+
+# Thank you for maintaining this category hierarchy. Please save your changes after editing.
+
+
+categories:
+  - code: maths
+    name: Mathematics
+    description: Mathematics topics encompass various fields of mathematical study.
+    children:
+      - code: algebra
+        name: Algebra
+        description: Algebra is a branch of mathematics that deals with mathematical symbols and the rules for manipulating these symbols.
+        children:
+          - code: lin_multi_lin_alg
+            name: Linear and Multilinear Algebra
+            description: Linear and Multilinear Algebra studies vector spaces, matrix operations, and linear transformations.
+            children:
+              - code: vector_sp
+                name: Vector Spaces
+                description: Vector Spaces are mathematical structures used to study linear relationships and transformations.
+              - code: matrix_theory
+                name: Matrix Theory
+                description: Matrix Theory focuses on the study of matrices, which are arrays of numbers or symbols arranged in rows and columns.
+          - code: group_th
+            name: Group Theory
+            description: Group Theory is the study of algebraic structures known as groups and their properties.
+          - code: field_th_poly
+            name: Field Theory and Polynomials
+            description: Field Theory and Polynomials involve the study of fields and polynomial equations.
+          - code: rings_asso_alg
+            name: Rings and Associative Algebras
+            description: Rings and Associative Algebras are algebraic structures with operations like addition and multiplication.
+          - code: lattices
+            name: Lattices
+            description: Lattices are ordered sets that have both a greatest lower bound and a least upper bound.
+          - code: comm_ring_alg
+            name: Commutative Rings and Algebras
+            description: Commutative Rings and Algebras focus on algebraic structures with commutative multiplication.
+          - code: homological_alg
+            name: Homological Algebras
+            description: Homological Algebras study algebraic structures using homology theory.
+          - code: non-asso_ring_alg
+            name: Non-Associative Rings and Algebras
+            description: Non-Associative Rings and Algebras explore algebraic structures without associative multiplication.
+          - code: alg_sys
+            name: General Algebraic Systems
+            description: General Algebraic Systems encompass various algebraic structures and their properties.
+      - code: analysis
+        name: Analysis
+        description: Analysis is a branch of mathematics that deals with limits, continuity, and the properties of functions.
+        children:
+          - code: real_analysis
+            name: Real Analysis
+            description: Real Analysis focuses on real numbers and the properties of functions defined on them.
+          - code: complex_analysis
+            name: Complex Analysis
+            description: Complex Analysis deals with functions of complex numbers and their properties.
+          - code: functional_analysis
+            name: Functional Analysis
+            description: Functional Analysis studies vector spaces of functions and their properties.
+            children:
+              - code: integral_equn
+                name: Integral Equations
+                description: Integral Equations involve equations with integrals and are important in physics and engineering.
+              - code: diff_equn
+                name: Differential Equations
+                description: Differential Equations involve equations with derivatives and are used to model dynamic systems.
+                children:
+                  - code: ode
+                    name: Ordinary Differential Equations (ODE)
+                    description: Ordinary Differential Equations (ODE) focus on equations with ordinary derivatives.
+                  - code: pde
+                    name: Partial Differential Equations (PDE)
+                    description: Partial Differential Equations (PDE) involve equations with partial derivatives.
+          - code: operator_th
+            name: Operator Theory
+            description: Operator Theory deals with linear operators on function spaces.
+          - code: operator_alg
+            name: Operator Algebras
+            description: Operator Algebras study algebras generated by linear operators.
+            children:
+              - code: c*_alg
+                name: C*-Algebras
+                description: C*-Algebras are normed algebras used to study operator theory and quantum mechanics.
+                children:
+                  - code: c*_alg_rep
+                    name: C*-Algebras and Their Representations
+                    description: C*-Algebras and Their Representations explore how operators can be represented algebraically.
+                  - code: operator_sp_asso_c*-alg
+                    name: Operator Spaces Associated with C*-Algebras
+                    description: Operator Spaces Associated with C*-Algebras involve normed vector spaces related to C*-algebras.
+                  - code: kk_th_c*-alg
+                    name: KK-Theory and K-Homology of C*-Algebras
+                    description: KK-Theory and K-Homology of C*-Algebras study topological invariants of C*-algebras.
+                  - code: non_sa_op_alg
+                    name: Non-Selfadjoint Operator Algebras
+                    description: Non-Selfadjoint Operator Algebras focus on operator algebras without self-adjointness.
+              - code: banach_alg
+                name: Banach Algebras
+                description: Banach Algebras are normed algebras used to study various mathematical structures.
+              - code: vNalg
+                name: Von Neumann Algebras
+                description: Von Neumann Algebras are algebras of bounded operators on Hilbert spaces.
+                children:
+                  - code: non_comm_geo
+                    name: Non-Commutative Geometry
+                    description: Non-Commutative Geometry explores geometry in the context of non-commutative algebras.
+                  - code: factors
+                    name: Factors
+                    description: Factors are specific types of von Neumann algebras with interesting properties.
+                  - code: type_i
+                    name: Type I Von Neumann Algebras
+                    description: Type I Von Neumann Algebras are a class of von Neumann algebras.
+                  - code: type_ii
+                    name: Type II Von Neumann Algebras
+                    description: Type II Von Neumann Algebras are another class of von Neumann algebras.
+                  - code: type_iii
+                    name: Type III Von Neumann Algebras
+                    description: Type III Von Neumann Algebras form a class of von Neumann algebras.
+                  - code: misc_vNa
+                    name: Miscellaneous Topics in Von Neumann Algebras
+                    description: Miscellaneous Topics in Von Neumann Algebras cover various aspects of this field.
+                  - code: tomita_tak_th
+                    name: Tomita-Takesaki Theory
+                    description: Tomita-Takesaki Theory studies the structure of von Neumann algebras.
+                  - code: math_quanta_mech
+                    name: Mathematical Foundation of Quantum Mechanics
+                    description: Mathematical Foundation of Quantum Mechanics explores the mathematical basis of quantum physics.
+              - code: operator_sp
+                name: Operator Spaces
+                description: Operator Spaces are vector spaces related to operator algebras and functional analysis.
+              - code: non_comm_alg
+                name: Non-Commutative Algebras
+                description: Non-Commutative Algebras study algebras with non-commutative multiplication.
+              - code: free_prob_rand_mat
+                name: Free Probability and Random Matrices
+                description: Free Probability and Random Matrices deal with random matrices and their properties.
+              - code: operator_k_th
+                name: Operator K-Theory
+                description: Operator K-Theory studies K-homology of operator algebras.
+              - code: misc_op_alg
+                name: Miscellaneous Topics in Operator Algebras
+                description: Miscellaneous Topics in Operator Algebras encompass various subfields and research areas.
+      - code: geometry
+        name: Geometry
+        description: Geometry is the branch of mathematics that deals with the properties and measurements of shapes and spaces.
+      - code: calculus
+        name: Calculus
+        description: Calculus is a fundamental branch of mathematics that deals with rates of change and accumulation.
+      - code: statistics
+        name: Statistics
+        description: Statistics is the study of data collection, analysis, interpretation, and presentation.
+        children:
+          - code: descriptive_stat
+            name: Descriptive Statistics
+            description: Descriptive Statistics involves summarizing and presenting data to gain insights.
+          - code: inferential_stat
+            name: Inferential Statistics
+            description: Inferential Statistics is about making predictions and inferences based on sample data.
+            children:
+              - code: hypo_testing
+                name: Hypothesis Testing
+                description: Hypothesis Testing involves statistical tests to make decisions about population parameters.
+              - code: regression_analysis
+                name: Regression Analysis
+                description: Regression Analysis studies relationships between variables and predicts outcomes.
+          - code: probability
+            name: Probability
+            description: Probability is the study of uncertainty and randomness in events and outcomes.
+      - code: number_th
+        name: Number Theory
+        description: Number Theory is the branch of mathematics that focuses on the properties of integers and related structures.
+      - code: discrete_math
+        name: Discrete Mathematics
+        description: Discrete Mathematics deals with countable and distinct values, often used in computer science and cryptography.
+ 
+
+  - code: natural_sci
+    name: Natural Sciences
+    description: Natural Sciences encompass the study of the physical world and its various phenomena.
+    children:
+      - code: biology
+        name: Biology
+        description: Biology explores the diversity, structure, and functions of living organisms.
+        children:
+          - code: botany
+            name: Botany
+            description: Botany focuses on the study of plants and their life processes.
+          - code: zoology
+            name: Zoology
+            description: Zoology examines the characteristics and behaviors of animals.
+          - code: microbio
+            name: Microbiology
+            description: Microbiology investigates microorganisms, including viruses and bacteria.
+            children:
+              - code: virology
+                name: Virology
+                description: Virology specializes in the study of viruses and viral diseases.
+              - code: bacteriology
+                name: Bacteriology
+                description: Bacteriology explores bacteria and their roles in various ecosystems.
+      - code: chemistry
+        name: Chemistry
+        description: Chemistry delves into the properties, composition, and transformations of matter.
+        children:
+          - code: organic_chem
+            name: Organic Chemistry
+            description: Organic Chemistry studies carbon-containing compounds and their reactions.
+          - code: inorganic_chem
+            name: Inorganic Chemistry
+            description: Inorganic Chemistry examines non-carbon compounds and inorganic reactions.
+          - code: physical_chem
+            name: Physical Chemistry
+            description: Physical Chemistry investigates the physical properties and changes in matter.
+      - code: physics
+        name: Physics
+        description: Physics explores the fundamental laws governing the behavior of the physical universe.
+        children:
+          - code: classical_mechanics
+            name: Classical Mechanics
+            description: Classical Mechanics deals with the motion of objects under forces.
+          - code: quantum_mechanics
+            name: Quantum Mechanics
+            description: Quantum Mechanics explores the behavior of particles at the quantum level.
+            children:
+              - code: quantum_entanglement
+                name: Quantum Entanglement
+                description: Quantum Entanglement studies the phenomenon of entangled particles.
+              - code: quantum_field_th
+                name: Quantum Field Theory
+                description: Quantum Field Theory investigates quantum particles as fields.
+          - code: electromagnetism
+            name: Electromagnetism
+            description: Electromagnetism focuses on electric and magnetic fields and their interactions.
+      - code: astronomy
+        name: Astronomy
+        description: Astronomy examines celestial objects, the universe's structure, and its evolution.
+        children:
+          - code: astrophysics
+            name: Astrophysics
+            description: Astrophysics studies the physical properties of celestial bodies.
+          - code: observational_astronomy
+            name: Observational Astronomy
+            description: Observational Astronomy observes and analyzes celestial phenomena.
+      - code: earth_sci
+        name: Earth Sciences
+        description: Earth Sciences investigate Earth's composition, processes, and history.
+        children:
+          - code: geology
+            name: Geology
+            description: Geology studies the Earth's structure, minerals, and geological processes.
+            children:
+              - code: mineralogy
+                name: Mineralogy
+                description: Mineralogy explores minerals and their properties.
+              - code: petrology
+                name: Petrology
+                description: Petrology focuses on the origin and classification of rocks.
+          - code: meteorology
+            name: Meteorology
+            description: Meteorology examines atmospheric conditions, weather, and climate.
+      - code: environmental_sci
+        name: Environmental Science
+        description: Environmental Science addresses environmental issues and ecosystems.
+        children:
+          - code: ecology
+            name: Ecology
+            description: Ecology studies the relationships between organisms and their environments.
+          - code: environmental_policy
+            name: Environmental Policy
+            description: Environmental Policy deals with regulations and actions to protect the environment.
+  
+  - code: techn_engineering
+    name: Technology And Engineering
+    description: Technology and Engineering encompass the application of scientific knowledge to solve practical problems.
+    children:
+      - code: comp_sci
+        name: Computer Science
+        description: Computer Science explores computation, algorithms, and computer systems.
+        children:
+          - code: algorithms
+            name: Algorithms
+            description: Algorithms are step-by-step procedures for solving computational problems.
+          - code: data_struc
+            name: Data Structures
+            description: Data Structures organize and store data for efficient retrieval and manipulation.
+          - code: AI
+            name: Artificial Intelligence
+            description: Artificial Intelligence focuses on creating intelligent agents and systems.
+            children:
+              - code: ML
+                name: Machine Learning
+                description: Machine Learning teaches computers to learn and make decisions from data.
+              - code: neural_network
+                name: Neural Networks
+                description: Neural Networks model information processing inspired by the human brain.
+      - code: electrical_eng
+        name: Electrical Engineering
+        description: Electrical Engineering deals with electrical systems, circuits, and devices.
+        children:
+          - code: electronics
+            name: Electronics
+            description: Electronics studies the behavior of electrons in circuits and devices.
+            children:
+              - code: digital_circuit
+                name: Digital Circuits
+                description: Digital Circuits process information using binary logic.
+              - code: analog_circuit
+                name: Analog Circuits
+                description: Analog Circuits handle continuous electrical signals.
+          - code: power_sys
+            name: Power Systems
+            description: Power Systems generate, transmit, and distribute electrical energy.
+            children:
+              - code: renewable_energy
+                name: Renewable Energy
+                description: Renewable Energy harnesses sustainable energy sources like solar and wind.
+              - code: power_distribution
+                name: Power Distribution
+                description: Power Distribution manages the supply of electricity to consumers.
+      - code: civil
+        name: Civil Engineering
+        description: Civil Engineering designs and constructs infrastructure and public works.
+        children:
+          - code: structural_eng
+            name: Structural Engineering
+            description: Structural Engineering focuses on building design and stability.
+            children:
+              - code: building_design
+                name: Building Design
+                description: Building Design creates safe and functional structures.
+              - code: bridge_design
+                name: Bridge Design
+                description: Bridge Design designs bridges for transportation and infrastructure.
+          - code: transportation_eng
+            name: Transportation Engineering
+            description: Transportation Engineering designs and manages transportation systems.
+            children:
+              - code: traffic_eng
+                name: Traffic Engineering
+                description: Traffic Engineering optimizes traffic flow and safety.
+              - code: urban_planning
+                name: Urban Planning
+                description: Urban Planning designs and manages city layouts and development.
+      - code: mechanical_eng
+        name: Mechanical Engineering
+        description: Mechanical Engineering deals with mechanical systems and energy conversion.
+        children:
+          - code: thermodynamics
+            name: Thermodynamics
+            description: Thermodynamics studies the transfer of heat and energy in mechanical systems.
+          - code: fluid_mechanics
+            name: Fluid Mechanics
+            description: Fluid Mechanics explores the behavior of fluids (liquids and gases).
+      - code: aerospace_eng
+        name: Aerospace Engineering
+        description: Aerospace Engineering focuses on aircraft and spacecraft design and technology.
+        children:
+          - code: aerodynamics
+            name: Aerodynamics
+            description: Aerodynamics examines the behavior of air and gases around vehicles.
+          - code: spacecraft_design
+            name: Spacecraft Design
+            description: Spacecraft Design designs vehicles for space exploration and travel.
+      - code: software_dev
+        name: Software Development
+        description: Software Development involves creating and maintaining software applications.
+        children:
+          - code: web_dev
+            name: Web Development
+            description: Web Development focuses on creating websites and web applications.
+            children:
+              - code: front_end_dev
+                name: Front-End Development
+                description: Front-End Development specializes in user interface and client-side coding.
+              - code: back_end_dev
+                name: Back-End Development
+                description: Back-End Development handles server-side functionality and databases.
+          - code: mob_app_dev
+            name: Mobile App Development
+            description: Mobile App Development creates applications for smartphones and tablets.
+            children:
+              - code: iOS_dev
+                name: iOS Development
+                description: iOS Development targets Apple's iOS platform for mobile apps.
+              - code: Android_development
+                name: Android Development
+                description: Android Development targets the Android operating system for mobile apps.
+
+  - code: health_medicine
+    name: Health And Medicine
+    description: This category encompasses various aspects of health and medicine.
+    children:
+      - code: medicine
+        name: Medicine
+        description: The field of medicine deals with the diagnosis, treatment, and prevention of diseases.
+        children:
+          - code: internal_medi
+            name: Internal Medicine
+            description: Internal medicine focuses on the diagnosis and treatment of adult diseases.
+          - code: surgery
+            name: Surgery
+            description: Surgery involves the use of operative techniques to treat various medical conditions.
+          - code: pediatrics
+            name: Pediatrics
+            description: Pediatrics is the branch of medicine that specializes in the care of infants, children, and adolescents.
+      - code: nursing
+        name: Nursing
+        description: Nursing is a profession dedicated to providing healthcare services, including patient care and education.
+      - code: pharmacology
+        name: Pharmacology
+        description: Pharmacology studies the effects of drugs and medications on the human body.
+      - code: public_health
+        name: Public Health
+        description: Public health focuses on improving the health of communities and populations through preventive measures and health promotion.
+      - code: nutrition
+        name: Nutrition
+        description: Nutrition is the science of food and its impact on health, encompassing dietary choices and their effects.
+      - code: mental_health
+        name: Mental Health
+        description: Mental health deals with emotional and psychological well-being.
+        children:
+          - code: psychology
+            name: Psychology
+            description: Psychology explores human behavior and mental processes.
+          - code: psychiatry
+            name: Psychiatry
+            description: Psychiatry is a medical specialty that diagnoses and treats mental illnesses and disorders.
+
+
+  - code: social_sci
+    name: Social Sciences
+    description: Social Sciences encompass the study of human behavior, societies, and related phenomena.
+    children:
+      - code: psychology
+        name: Psychology
+        description: Psychology explores the human mind, behavior, and mental processes.
+      - code: sociology
+        name: Sociology
+        description: Sociology examines social structures and interactions in human societies.
+        children:
+          - code: social_th
+            name: Social Theory
+            description: Social Theory focuses on theoretical frameworks for understanding social phenomena.
+          - code: criminology
+            name: Criminology
+            description: Criminology studies crime, criminal behavior, and its social implications.
+      - code: anthro
+        name: Anthropology
+        description: Anthropology investigates human cultures, societies, and physical diversity.
+        children:
+          - code: cultural_anthro
+            name: Cultural Anthropology
+            description: Cultural Anthropology explores cultural practices, beliefs, and customs.
+          - code: physical_anthro
+            name: Physical Anthropology
+            description: Physical Anthropology examines human biological evolution and variation.
+      - code: economics
+        name: Economics
+        description: Economics analyzes the production, distribution, and consumption of goods and services.
+        children:
+          - code: microeconomics
+            name: Microeconomics
+            description: Microeconomics studies individual economic agents and market behaviors.
+          - code: macroeconomics
+            name: Macroeconomics
+            description: Macroeconomics examines the broader aspects of national and global economies.
+      - code: pol_sci
+        name: Political Science
+        description: Political Science explores political systems, governance, and policies.
+        children:
+          - code: international_relation
+            name: International Relations
+            description: International Relations focuses on the interactions between nations and global politics.
+          - code: comparative_politics
+            name: Comparative Politics
+            description: Comparative Politics compares different political systems and governments.
+
+  - code: business_and_economics
+    name: Business And Economics
+    description: Business and Economics encompass the study of commerce, finance, and economic activities.
+    children:
+      - code: finance
+        name: Finance
+        description: Finance deals with the management of money, investments, and financial institutions.
+        children:
+          - code: corporate_finance
+            name: Corporate Finance
+            description: Corporate Finance involves financial decisions within organizations.
+          - code: personal_finance
+            name: Personal Finance
+            description: Personal Finance covers individual financial planning and management.
+          - code: investment
+            name: Investment
+            description: Investment focuses on allocating resources in financial markets.
+      - code: marketing
+        name: Marketing
+        description: Marketing involves strategies to promote and sell products or services.
+        children:
+          - code: digital_marketing
+            name: Digital Marketing
+            description: Digital Marketing uses online channels for marketing campaigns.
+          - code: branding
+            name: Branding
+            description: Branding focuses on creating and managing brand identities.
+      - code: management
+        name: Management
+        description: Management explores organizational leadership and decision-making.
+        children:
+          - code: human_resource_management
+            name: Human Resource Management
+            description: Human Resource Management deals with personnel and workforce issues.
+          - code: project_management
+            name: Project Management
+            description: Project Management involves planning and executing projects efficiently.
+      - code: entrepreneurship
+        name: Entrepreneurship
+        description: Entrepreneurship is the process of starting and managing new business ventures.
+      - code: economics
+        name: Economics
+        description: Economics studies economic systems, behaviors, and policies.
+        children:
+          - code: behavioral_economics
+            name: Behavioral Economics
+            description: Behavioral Economics examines economic decisions influenced by psychology and emotions.
+          - code: economic_policy
+            name: Economic Policy
+            description: Economic Policy involves government actions to regulate and manage the economy.
+  
+  
+  - code: art_culture
+    name: Art And Culture
+    description: Art and Culture encompasses various aspects of creative expression and cultural studies.
+    children:
+      - code: visual_arts
+        name: Visual Arts
+        description: Visual Arts includes various forms of visual artistic expression.
+        children:
+          - code: painting
+            name: Painting
+            description: Painting is a form of visual art that uses pigments on a surface to create images.
+          - code: sculpture
+            name: Sculpture
+            description: Sculpture is the art of creating three-dimensional forms or shapes from various materials.
+      - code: music
+        name: Music
+        description: Music is the art of creating and performing musical compositions.
+        children:
+          - code: classical_music
+            name: Classical Music
+            description: Classical Music refers to the traditional music of historical composers and orchestral works.
+          - code: contemporary_music
+            name: Contemporary Music
+            description: Contemporary Music encompasses modern musical genres and compositions.
+      - code: literature
+        name: Literature
+        description: Literature includes written works of fiction, non-fiction, and creative writing.
+        children:
+          - code: novel
+            name: Novel
+            description: A Novel is a long work of fiction literature.
+          - code: story
+            name: Story
+            description: A Story is a shorter work of fiction often with a narrative plot.
+          - code: essay
+            name: Essay
+            description: An Essay is a written work that explores a specific topic or idea.
+          - code: poetry
+            name: Poetry
+            description: Poetry is a form of literary expression characterized by rhythm and figurative language.
+          - code: drama
+            name: Drama
+            description: Drama encompasses written works intended for performance on stage or screen.
+      - code: film_and_cinema
+        name: Film And Cinema
+        description: Film and Cinema involve the creation and study of movies and motion pictures.
+        children:
+          - code: film_history
+            name: Film History
+            description: Film History explores the development and evolution of filmmaking.
+          - code: cinematography
+            name: Cinematography
+            description: Cinematography is the art and technique of film photography and camera work.
+      - code: performing_arts
+        name: Performing Arts
+        description: Performing Arts involve live performances, including theater, dance, and more.
+        children:
+          - code: theater
+            name: Theater
+            description: Theater encompasses live dramatic performances, including plays and musicals.
+            children:
+              - code: play
+                name: Play
+                description: A Play is a type of theater performance involving scripted dialogue and acting.
+
+
+  - code: lib_info_sci
+    name: Library And Information Sciences
+    description: Library and Information Sciences encompass aspects of library management, information organization, and services.
+    children:
+      - code: lib_relation
+        name: Relationships With Other Institutions
+        description: Covers interactions and cooperation between libraries and other institutions.
+        children:
+          - code: lib_cooperate
+            name: Library Cooperation
+            description: Involves collaborative efforts among libraries to enhance services and resources.
+          - code: lib_associate
+            name: Library Associations
+            description: Focuses on professional organizations related to libraries.
+      - code: lib_admin_plant
+        name: Administration Of Physical Plant
+        description: Includes topics related to the physical infrastructure of libraries.
+      - code: personnel_services
+        name: Personnel And Services
+        description: Encompasses library staff, services, and various processes in libraries and information centers.
+        children:
+          - code: lib_staff
+            name: Library Staff
+            description: Covers roles, responsibilities, and management of library personnel.
+          - code: public_services
+            name: Public Services
+            description: Includes aspects of assisting library users, such as reference services.
+          - code: circulation_access
+            name: Circulation And Access Services
+            description: Involves managing the borrowing and access to library materials.
+          - code: technical_processes
+            name: Technical Processes
+            description: Includes cataloging, classification, and other behind-the-scenes tasks.
+          - code: acquisition_dev
+            name: Acquisition And Collection Development
+            description: Covers selection and acquisition of library materials.
+          - code: cataloging_and_classification
+            name: Cataloging And Classification
+            description: Involves organizing and categorizing library resources.
+          - code: serial_publications
+            name: Serial Publications
+            description: Encompasses the management of periodicals and serials in libraries.
+          - code: nonbook_materials
+            name: Nonbook Materials
+            description: Includes audiovisual and electronic resources in libraries.
+      - code: lib_operations
+        name: Library Operations
+        description: Encompasses day-to-day activities and functions of libraries.
+      - code: libs_specific_subj
+        name: Libraries For Specific Subjects
+        description: Focuses on specialized libraries serving particular disciplines.
+      - code: general_libraries
+        name: General Libraries
+        description: Includes libraries catering to a wide range of subjects and audiences.
+      - code: info_media
+        name: Reading And Use Of Other Information Media
+        description: Covers various media formats and information sources.
+        children:
+          - code: comp_use_lib
+            name: Computer Use In Libraries
+            description: Explores the integration of technology into library services.
+      - code: manuscripts_rare_books
+        name: Manuscripts And Rare Books
+        description: Encompasses the study and preservation of historical texts and manuscripts.
+      - code: education_research
+        name: Education And Research
+        description: Focuses on academic programs and research related to library and information sciences.
+      - code: collection_collecting
+        name: Collections And Collecting
+        description: Involves the acquisition and management of specialized collections within libraries.
+  
