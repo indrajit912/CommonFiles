@@ -51,4 +51,3 @@ This repository is open-source and is available under the [MIT License](LICENSE)
 
 ---
 
-**Note**: This README is a template. Please customize it with specific information about your "CommonFiles" repository, such as additional usage instructions or guidelines for contributors.
