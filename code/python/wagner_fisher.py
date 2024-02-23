@@ -38,12 +38,18 @@ def wagner_fisher(str1, str2):
 
 
 def main():
-    # Example usage:
-    str1 = "kitten"
-    str2 = "sitting"
-    distance = wagner_fisher(str1, str2)
-    print(f"The edit distance between '{str1}' and '{str2}' is: {distance}")
+    # Example usage
+    titles = ["The Great Gatsby", "To Kill a Mockingbird", "1984", "Pride and Prejudice", "The Catcher in the Rye"]
 
+    user_input = input("Enter a book title: ")
+
+    matches = [(title, wagner_fisher(user_input, title)) for title in titles]
+    matches.sort(key=lambda x: x[1])
+
+    print("Best Matches:")
+    for match, distance in matches[:5]:
+        print(f"Title: {match}, Distance: {distance}")
+    
 
 if __name__ == '__main__':
     main()
